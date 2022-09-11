@@ -1,0 +1,18 @@
+[package]
+name = "key_value_database"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+byteorder = "1.4.3"
+clap = { version = "3.2.17", features = ["derive"] }
+serde = "1.0.144"
+serde_derive = "1.0.144"
+crc = "1.7"
+md5 = "0.7.0"
+
+[lib]
+name = "libkvdb"
+path = "src/lib.rs"
